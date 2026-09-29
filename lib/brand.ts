@@ -80,8 +80,8 @@ export const BRAND: BrandConfig = {
 
   hero: {
     chip: "Analyse personnalisée",
-    title: "Votre propriété va‑t‑elle se vendre au meilleur prix du marché sur la Rive-Sud ?",
-    titleHighlight: "meilleur prix",
+    title: "Ta propriété sur la Rive-Sud est‑elle prête à vendre ?",
+    titleHighlight: "prête à vendre",
     titleSoft: "Rive-Sud",
     subtitle:
       "Répondez à 9 questions et recevez une analyse honnête et confidentielle de ce qui peut faire monter, ou baisser, votre prix de vente : prix de départ, état de la propriété et attrait extérieur.",
