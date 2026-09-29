@@ -19,19 +19,19 @@ interface Props {
 const VERDICT_BADGE: Record<Verdict, { label: string; color: string; bg: string; ring: string }> = {
   favorable: {
     label: "Prête pour le meilleur prix",
-    color: "text-emerald-600",
+    color: "text-emerald-400",
     bg: "bg-emerald-500/10",
     ring: "ring-emerald-500/30",
   },
   moyen: {
     label: "Prix à risque",
-    color: "text-amber-600",
+    color: "text-amber-400",
     bg: "bg-amber-500/10",
     ring: "ring-amber-500/30",
   },
   defavorable: {
     label: "Risque de vendre sous le marché",
-    color: "text-rose-600",
+    color: "text-rose-400",
     bg: "bg-rose-500/10",
     ring: "ring-rose-500/30",
   },
@@ -70,7 +70,7 @@ export default function ResultsScreen({ analyze, answers, revealChoice, onRestar
           {/* Icône cadenas avec halo */}
           <div className="relative mx-auto mb-7 w-16 h-16">
             <div className="absolute inset-0 rounded-full bg-[var(--color-brand-500)]/20 blur-xl" />
-            <div className="relative w-16 h-16 rounded-full bg-gradient-to-br from-[var(--color-brand-500)] to-[var(--color-brand-700)] border border-white/10 flex items-center justify-center shadow-[0_10px_40px_-10px_rgba(0,0,0,0.5)]">
+            <div className="relative w-16 h-16 rounded-full bg-gradient-to-br from-[var(--color-brand-500)] to-[var(--color-brand-700)] border border-white/10 flex items-center justify-center shadow-[0_10px_40px_-10px_rgba(3,10,24,0.5)]">
               <svg className="w-7 h-7 text-white" viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeWidth="1.8">
                 <rect x="4" y="9" width="12" height="9" rx="2" />
                 <path d="M7 9V6.5C7 4.8 8.3 3.5 10 3.5C11.7 3.5 13 4.8 13 6.5V9" />
@@ -261,7 +261,7 @@ export default function ResultsScreen({ analyze, answers, revealChoice, onRestar
                 shrink-0 w-8 h-8 rounded-full
                 bg-gradient-to-br from-[var(--color-gold-soft)] to-[var(--color-gold)]
                 flex items-center justify-center
-                font-serif text-[#0a0a0a] text-sm font-semibold
+                font-serif text-[#0b1f3f] text-sm font-semibold
                 shadow-[0_6px_18px_-4px_rgba(201,162,39,0.45)]
               ">
                 {i + 1}
@@ -313,7 +313,7 @@ function ConfirmationBlock({
       {stored ? (
         <>
           <div className="flex items-center gap-2 mb-2">
-            <svg className="w-5 h-5 text-emerald-600" viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeWidth="2">
+            <svg className="w-5 h-5 text-emerald-400" viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeWidth="2">
               <path d="M3 7L10 3L17 7M3 7V15A2 2 0 0 0 5 17H15A2 2 0 0 0 17 15V7M3 7L10 11L17 7" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
             <p className="font-serif text-xl sm:text-2xl text-[var(--color-brand-100)]">
@@ -355,9 +355,9 @@ function ScoreCard({ score, verdict }: { score: number; verdict: Verdict }) {
       className="
         relative overflow-hidden
         rounded-3xl p-7 sm:p-9
-        bg-gradient-to-br from-[#161616] via-[#0f0f0f] to-[#000000]
+        bg-gradient-to-br from-[#16366b] via-[#0e2548] to-[#07152b]
         border border-[var(--color-gold)]/25
-        shadow-[0_30px_80px_-30px_rgba(0,0,0,0.9),0_0_0_1px_rgba(201,162,39,0.12)_inset]
+        shadow-[0_30px_80px_-30px_rgba(3,10,24,0.9),0_0_0_1px_rgba(201,162,39,0.12)_inset]
       "
     >
       <div className="absolute -top-20 -right-20 w-60 h-60 rounded-full bg-[var(--color-gold)]/15 blur-3xl" />

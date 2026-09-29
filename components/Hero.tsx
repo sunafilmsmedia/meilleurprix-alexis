@@ -100,9 +100,9 @@ export default function Hero({ onStart }: HeroProps) {
               px-8 sm:px-10 py-4
               rounded-full
               bg-gradient-to-b from-[var(--color-gold-soft)] to-[var(--color-gold)]
-              text-[#0a0a0a] font-semibold text-base
-              shadow-[0_20px_50px_-15px_rgba(201,162,39,0.55),0_0_0_1px_rgba(0,0,0,0.15)_inset]
-              hover:shadow-[0_25px_60px_-10px_rgba(201,162,39,0.7),0_0_0_1px_rgba(0,0,0,0.2)_inset]
+              text-[#0b1f3f] font-semibold text-base
+              shadow-[0_20px_50px_-15px_rgba(201,162,39,0.55),0_0_0_1px_rgba(3,10,24,0.15)_inset]
+              hover:shadow-[0_25px_60px_-10px_rgba(201,162,39,0.7),0_0_0_1px_rgba(3,10,24,0.2)_inset]
               transition-all duration-300
               hover:-translate-y-0.5
               active:translate-y-0

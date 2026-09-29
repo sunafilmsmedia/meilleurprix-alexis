@@ -53,14 +53,14 @@ export default function HeroBackground() {
         className="absolute inset-0"
         style={{
           background:
-            "radial-gradient(ellipse at 50% 32%, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0.7) 40%, rgba(0,0,0,0.92) 100%)",
+            "radial-gradient(ellipse at 50% 32%, rgba(11,31,63,0.55) 0%, rgba(11,31,63,0.7) 40%, rgba(11,31,63,0.92) 100%)",
         }}
       />
       <div
         className="absolute inset-0"
         style={{
           background:
-            "linear-gradient(180deg, rgba(0,0,0,0.75) 0%, rgba(0,0,0,0.35) 22%, rgba(0,0,0,0.45) 70%, rgba(0,0,0,0.96) 100%)",
+            "linear-gradient(180deg, rgba(11,31,63,0.75) 0%, rgba(11,31,63,0.35) 22%, rgba(11,31,63,0.45) 70%, rgba(11,31,63,0.96) 100%)",
         }}
       />
     </div>

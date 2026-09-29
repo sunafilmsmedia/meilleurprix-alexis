@@ -84,14 +84,14 @@ export default function NumberQuestion({
             [&::-webkit-slider-thumb]:w-8 [&::-webkit-slider-thumb]:h-8
             [&::-webkit-slider-thumb]:rounded-full
             [&::-webkit-slider-thumb]:bg-[var(--color-gold)]
-            [&::-webkit-slider-thumb]:border-[3px] [&::-webkit-slider-thumb]:border-[#0a0a0a]
+            [&::-webkit-slider-thumb]:border-[3px] [&::-webkit-slider-thumb]:border-[#0b1f3f]
             [&::-webkit-slider-thumb]:ring-2 [&::-webkit-slider-thumb]:ring-[var(--color-gold-soft)]
             [&::-webkit-slider-thumb]:shadow-[0_6px_20px_-2px_rgba(212,175,55,0.6)]
             [&::-webkit-slider-thumb]:cursor-grab [&::-webkit-slider-thumb]:active:cursor-grabbing
             [&::-webkit-slider-thumb]:transition-transform [&::-webkit-slider-thumb]:hover:scale-110
             [&::-moz-range-thumb]:w-8 [&::-moz-range-thumb]:h-8
             [&::-moz-range-thumb]:rounded-full [&::-moz-range-thumb]:bg-[var(--color-gold)]
-            [&::-moz-range-thumb]:border-[3px] [&::-moz-range-thumb]:border-[#0a0a0a]
+            [&::-moz-range-thumb]:border-[3px] [&::-moz-range-thumb]:border-[#0b1f3f]
             [&::-moz-range-thumb]:shadow-[0_6px_20px_-2px_rgba(212,175,55,0.6)]
             [&::-moz-range-thumb]:cursor-grab
           "

@@ -33,7 +33,7 @@ export default function TopLogos() {
         className="fixed top-4 right-4 sm:top-6 sm:right-6 z-30 pointer-events-none"
         aria-hidden
       >
-        <div className="rounded-xl bg-white px-2 py-1 shadow-[0_10px_30px_-10px_rgba(0,0,0,0.6)] ring-1 ring-black/5">
+        <div className="rounded-xl bg-white px-2 py-1 shadow-[0_10px_30px_-10px_rgba(3,10,24,0.6)] ring-1 ring-black/5">
           <Image
             src={banner.src}
             alt={banner.alt}

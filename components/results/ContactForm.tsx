@@ -119,7 +119,7 @@ export default function ContactForm({ answers, verdict, onSubmitted, gated }: Pr
         rounded-3xl p-6 sm:p-8
         bg-white/[0.05]
         border border-[var(--color-slate-accent)]/20
-        shadow-[0_30px_80px_-30px_rgba(0,0,0,0.8)]
+        shadow-[0_30px_80px_-30px_rgba(3,10,24,0.8)]
       "
     >
       <div className="flex items-center gap-2 mb-1">
@@ -180,7 +180,7 @@ export default function ContactForm({ answers, verdict, onSubmitted, gated }: Pr
           />
           <span className="block w-5 h-5 rounded-md border border-[var(--color-slate-accent)]/40 bg-white/[0.08] peer-checked:bg-[var(--color-gold)] peer-checked:border-[var(--color-gold-soft)] transition-colors" />
           <svg
-            className="absolute inset-0 m-auto w-3 h-3 text-[#0a0a0a] opacity-0 peer-checked:opacity-100 transition-opacity"
+            className="absolute inset-0 m-auto w-3 h-3 text-[#0b1f3f] opacity-0 peer-checked:opacity-100 transition-opacity"
             viewBox="0 0 12 12"
             fill="none"
             stroke="currentColor"
@@ -195,7 +195,7 @@ export default function ContactForm({ answers, verdict, onSubmitted, gated }: Pr
         </span>
       </label>
 
-      {error && <p className="mt-3 text-sm text-rose-600 text-center">{error}</p>}
+      {error && <p className="mt-3 text-sm text-rose-400 text-center">{error}</p>}
 
       <button
         type="button"
@@ -206,7 +206,7 @@ export default function ContactForm({ answers, verdict, onSubmitted, gated }: Pr
           inline-flex items-center justify-center gap-2
           px-6 py-4 rounded-full text-base font-semibold
           bg-gradient-to-b from-[var(--color-gold-soft)] to-[var(--color-gold)]
-          text-[#0a0a0a]
+          text-[#0b1f3f]
           shadow-[0_15px_40px_-10px_rgba(201,162,39,0.5)]
           hover:shadow-[0_20px_50px_-10px_rgba(201,162,39,0.65)]
           disabled:opacity-60 disabled:cursor-not-allowed

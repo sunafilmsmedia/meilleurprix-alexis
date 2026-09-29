@@ -35,11 +35,11 @@ export default function ChoiceQuestion({ choices, value, onChange }: Props) {
           >
             <div className="flex items-center justify-between gap-4">
               <div className="min-w-0 flex-1">
-                <p className={`font-medium ${selected ? "text-[#0a0a0a]" : "text-[var(--color-brand-100)]"}`}>
+                <p className={`font-medium ${selected ? "text-[#0b1f3f]" : "text-[var(--color-brand-100)]"}`}>
                   {c.label}
                 </p>
                 {c.hint && (
-                  <p className={`text-xs mt-0.5 ${selected ? "text-[#0a0a0a]/70" : "text-slate-400"}`}>{c.hint}</p>
+                  <p className={`text-xs mt-0.5 ${selected ? "text-[#0b1f3f]/70" : "text-slate-400"}`}>{c.hint}</p>
                 )}
               </div>
               <span
@@ -47,7 +47,7 @@ export default function ChoiceQuestion({ choices, value, onChange }: Props) {
                   shrink-0 w-5 h-5 rounded-full border transition-all
                   ${
                     selected
-                      ? "bg-[#0a0a0a] border-[#0a0a0a] shadow-[0_0_10px_rgba(0,0,0,0.35)]"
+                      ? "bg-[#0b1f3f] border-[#0b1f3f] shadow-[0_0_10px_rgba(3,10,24,0.35)]"
                       : "border-[var(--color-slate-accent)]/35 group-hover:border-[var(--color-slate-accent)]/55"
                   }
                 `}

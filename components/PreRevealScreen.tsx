@@ -39,9 +39,9 @@ export default function PreRevealScreen({ onContinue }: Props) {
           initial={{ scale: 0, rotate: -20 }}
           animate={{ scale: 1, rotate: 0 }}
           transition={{ delay: 0.1, duration: 0.6, type: "spring", stiffness: 160, damping: 14 }}
-          className="mx-auto mb-7 w-16 h-16 rounded-full bg-gradient-to-br from-emerald-400/25 to-[var(--color-brand-500)]/15 border border-emerald-500/40 flex items-center justify-center shadow-[0_10px_40px_-10px_rgba(0,0,0,0.3)]"
+          className="mx-auto mb-7 w-16 h-16 rounded-full bg-gradient-to-br from-emerald-400/25 to-[var(--color-brand-500)]/15 border border-emerald-500/40 flex items-center justify-center shadow-[0_10px_40px_-10px_rgba(3,10,24,0.3)]"
         >
-          <svg className="w-7 h-7 text-emerald-600" viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeWidth="2.5">
+          <svg className="w-7 h-7 text-emerald-400" viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeWidth="2.5">
             <path d="M4 10L8 14L16 6" strokeLinecap="round" strokeLinejoin="round" />
           </svg>
         </motion.div>
@@ -69,7 +69,7 @@ export default function PreRevealScreen({ onContinue }: Props) {
             relative overflow-hidden
             rounded-2xl
             bg-gradient-to-b from-[var(--color-gold-soft)] to-[var(--color-gold)]
-            text-[#0a0a0a]
+            text-[#0b1f3f]
             px-6 py-5
             shadow-[0_20px_50px_-15px_rgba(201,162,39,0.55)]
             hover:shadow-[0_25px_60px_-10px_rgba(201,162,39,0.7)]
@@ -81,7 +81,7 @@ export default function PreRevealScreen({ onContinue }: Props) {
           <span className="block font-medium text-base sm:text-lg">
             Voir ma réponse
           </span>
-          <span className="block text-xs sm:text-sm text-[#0a0a0a]/65 mt-1">
+          <span className="block text-xs sm:text-sm text-[#0b1f3f]/65 mt-1">
             Analyse complète et gratuite
           </span>
           <span className="absolute right-5 top-1/2 -translate-y-1/2 flex items-center justify-center w-5 h-5">
@@ -91,9 +91,9 @@ export default function PreRevealScreen({ onContinue }: Props) {
               </svg>
             ) : (
               <span className="flex gap-0.5">
-                <span className="w-1 h-1 rounded-full bg-[#0a0a0a]/60 animate-pulse" />
-                <span className="w-1 h-1 rounded-full bg-[#0a0a0a]/60 animate-pulse" style={{ animationDelay: "0.15s" }} />
-                <span className="w-1 h-1 rounded-full bg-[#0a0a0a]/60 animate-pulse" style={{ animationDelay: "0.3s" }} />
+                <span className="w-1 h-1 rounded-full bg-[#0b1f3f]/60 animate-pulse" />
+                <span className="w-1 h-1 rounded-full bg-[#0b1f3f]/60 animate-pulse" style={{ animationDelay: "0.15s" }} />
+                <span className="w-1 h-1 rounded-full bg-[#0b1f3f]/60 animate-pulse" style={{ animationDelay: "0.3s" }} />
               </span>
             )}
           </span>

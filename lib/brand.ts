@@ -80,7 +80,7 @@ export const BRAND: BrandConfig = {
 
   hero: {
     chip: "Estimation personnalisée",
-    title: "Votre propriété va-t-elle se vendre au meilleur prix du marché à Gatineau ?",
+    title: "Votre propriété va‑t‑elle se vendre au meilleur prix du marché à Gatineau ?",
     titleHighlight: "meilleur prix",
     titleSoft: "Gatineau",
     subtitle:

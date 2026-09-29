@@ -6,25 +6,25 @@
   --font-sans: "DM Sans", "Elza", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   --font-display: "Montserrat", "Arial Black", "Helvetica Neue", sans-serif;
 
-  --color-ink-950: #000000;
-  --color-ink-900: #0a0a0a;
-  --color-ink-800: #141414;
-  --color-ink-700: #1f1f1f;
+  --color-ink-950: #050f20;
+  --color-ink-900: #0b1f3f;
+  --color-ink-800: #10284f;
+  --color-ink-700: #163366;
 
-  /* Thème SOMBRE — fond noir / texte clair / accent doré.
-     brand-100/200 = textes clairs lisibles sur noir ;
+  /* Thème SOMBRE — fond bleu marine / texte blanc / accent doré.
+     brand-100/200 = textes clairs lisibles sur bleu marine ;
      brand-300 = doré (micro-libellés, icônes) ;
      brand-400..900 = surfaces sombres élevées (cartes, cercles). */
-  --color-brand-50: #f5f5f4;
-  --color-brand-100: #f5f5f4;
-  --color-brand-200: #d6d3d1;
+  --color-brand-50: #ffffff;
+  --color-brand-100: #ffffff;
+  --color-brand-200: #dbe3ef;
   --color-brand-300: #d4af37;
-  --color-brand-400: #3a3a3a;
-  --color-brand-500: #1f1f1f;
-  --color-brand-600: #171717;
-  --color-brand-700: #0f0f0f;
-  --color-brand-800: #141414;
-  --color-brand-900: #000000;
+  --color-brand-400: #2a4c86;
+  --color-brand-500: #1a3a6e;
+  --color-brand-600: #143162;
+  --color-brand-700: #0e2548;
+  --color-brand-800: #10284f;
+  --color-brand-900: #07152b;
 
   /* Doré — accent de marque (or métallique riche) */
   --color-gold: #d4af37;
@@ -33,16 +33,16 @@
   --color-slate-accent: #d4af37;
   --color-slate-soft: #ecc964;
 
-  /* Textes secondaires — gris clairs lisibles sur fond noir */
-  --color-slate-300: #d4d4d4;
-  --color-slate-400: #a3a3a3;
-  --color-slate-500: #8a8a8a;
-  --color-slate-600: #6b6b6b;
+  /* Textes secondaires — blancs bleutés lisibles sur fond bleu marine */
+  --color-slate-300: #dfe6f1;
+  --color-slate-400: #b7c4d8;
+  --color-slate-500: #92a3bd;
+  --color-slate-600: #71839f;
 }
 
 html, body {
-  background: radial-gradient(ellipse at 50% -5%, #17130a 0%, #0c0c0c 42%, #000000 100%);
-  color: #f5f5f4;
+  background: radial-gradient(ellipse at 50% -5%, #1c427f 0%, #0b1f3f 45%, #07152b 100%);
+  color: #ffffff;
   font-family: var(--font-sans);
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
@@ -53,14 +53,14 @@ body {
   overflow-x: hidden;
 }
 
-/* Surface sombre givrée (thème noir) */
+/* Surface givrée (thème bleu marine) */
 @utility glass-card {
   background: rgba(255, 255, 255, 0.045);
   backdrop-filter: blur(18px) saturate(120%);
   -webkit-backdrop-filter: blur(18px) saturate(120%);
   border: 1px solid rgba(255, 255, 255, 0.09);
   box-shadow:
-    0 24px 60px -28px rgba(0, 0, 0, 0.7),
+    0 24px 60px -28px rgba(3, 10, 24, 0.7),
     0 1px 0 rgba(255, 255, 255, 0.04) inset;
 }
 
@@ -70,7 +70,7 @@ body {
   -webkit-backdrop-filter: blur(20px) saturate(140%);
   border: 1px solid rgba(201, 162, 39, 0.20);
   box-shadow:
-    0 30px 80px -30px rgba(0, 0, 0, 0.85),
+    0 30px 80px -30px rgba(3, 10, 24, 0.85),
     0 0 0 1px rgba(255, 255, 255, 0.05) inset;
 }
 
@@ -95,12 +95,12 @@ body {
 .ai-shimmer {
   background-image: linear-gradient(
     90deg,
-    #f5f5f4 0%,
+    #ffffff 0%,
     #d4af37 22%,
     #ecc964 44%,
-    #f5f5f4 62%,
+    #ffffff 62%,
     #d4af37 82%,
-    #f5f5f4 100%
+    #ffffff 100%
   );
   background-size: 200% auto;
   background-clip: text;
@@ -112,12 +112,12 @@ body {
 .ai-shimmer-fast {
   background-image: linear-gradient(
     90deg,
-    #f5f5f4 0%,
+    #ffffff 0%,
     #d4af37 22%,
     #ecc964 44%,
-    #f5f5f4 62%,
+    #ffffff 62%,
     #d4af37 82%,
-    #f5f5f4 100%
+    #ffffff 100%
   );
   background-size: 200% auto;
   background-clip: text;
@@ -143,7 +143,7 @@ body {
   opacity: 0.5;
 }
 
-/* Carte fond non-interactive — sombre, rues à peine visibles sous le voile noir */
+/* Carte fond non-interactive — rues à peine visibles sous le voile bleu marine */
 .map-mono {
   filter: grayscale(1) contrast(1.1) brightness(0.85) opacity(0.5);
 }
@@ -158,7 +158,7 @@ body {
   font-family: var(--font-sans);
 }
 .leaflet-control-attribution {
-  background: rgba(0, 0, 0, 0.55) !important;
+  background: rgba(7, 21, 43, 0.7) !important;
   color: rgba(255,255,255, 0.5) !important;
   font-size: 10px !important;
   padding: 2px 6px !important;
@@ -170,15 +170,15 @@ body {
 
 /* Étiquettes (tooltips) Leaflet sur la carte régions */
 .region-label {
-  background: rgba(15, 15, 15, 0.95) !important;
+  background: rgba(11, 31, 63, 0.95) !important;
   border: 1px solid rgba(201,162,39, 0.45) !important;
-  color: #f5f5f4 !important;
+  color: #ffffff !important;
   font-family: var(--font-sans);
   font-weight: 600;
   font-size: 12px;
   padding: 4px 10px !important;
   border-radius: 9999px !important;
-  box-shadow: 0 6px 20px -6px rgba(0,0,0, 0.6) !important;
+  box-shadow: 0 6px 20px -6px rgba(3,10,24, 0.6) !important;
 }
 .region-label::before {
   display: none !important;
