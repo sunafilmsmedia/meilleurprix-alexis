@@ -165,7 +165,7 @@ export default function ContactForm({ answers, verdict, onSubmitted, gated }: Pr
           autoComplete="tel"
           value={phone}
           onChange={setPhone}
-          placeholder="(819) 555-0123"
+          placeholder="(450) 555-0123"
           helper="Pour qu'un courtier puisse vous joindre rapidement."
         />
       </div>
@@ -207,8 +207,8 @@ export default function ContactForm({ answers, verdict, onSubmitted, gated }: Pr
           px-6 py-4 rounded-full text-base font-semibold
           bg-gradient-to-b from-[var(--color-gold-soft)] to-[var(--color-gold)]
           text-[#0b1f3f]
-          shadow-[0_15px_40px_-10px_rgba(201,162,39,0.5)]
-          hover:shadow-[0_20px_50px_-10px_rgba(201,162,39,0.65)]
+          shadow-[0_15px_40px_-10px_rgba(200,131,74,0.5)]
+          hover:shadow-[0_20px_50px_-10px_rgba(200,131,74,0.65)]
           disabled:opacity-60 disabled:cursor-not-allowed
           transition-all
         "

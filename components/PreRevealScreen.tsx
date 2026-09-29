@@ -71,8 +71,8 @@ export default function PreRevealScreen({ onContinue }: Props) {
             bg-gradient-to-b from-[var(--color-gold-soft)] to-[var(--color-gold)]
             text-[#0b1f3f]
             px-6 py-5
-            shadow-[0_20px_50px_-15px_rgba(201,162,39,0.55)]
-            hover:shadow-[0_25px_60px_-10px_rgba(201,162,39,0.7)]
+            shadow-[0_20px_50px_-15px_rgba(200,131,74,0.55)]
+            hover:shadow-[0_25px_60px_-10px_rgba(200,131,74,0.7)]
             hover:-translate-y-0.5
             transition-all duration-300
             disabled:opacity-70 disabled:cursor-wait disabled:translate-y-0

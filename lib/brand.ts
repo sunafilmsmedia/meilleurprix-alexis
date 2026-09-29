@@ -45,7 +45,7 @@ export interface BrandConfig {
     title: string;
     /** Segment exact du titre en or shimmer + police douce (serif italique) (ex. "bon moment"). Optionnel. */
     titleHighlight?: string;
-    /** Segment exact du titre en police douce dorée (serif italique) (ex. "Gatineau"). Optionnel. */
+    /** Segment exact du titre en police douce bronze (serif italique) (ex. "Rive-Sud"). Optionnel. */
     titleSoft?: string;
     subtitle: string;
     signature: string; // "Boosté par l'IA"
@@ -54,65 +54,53 @@ export interface BrandConfig {
     scrollHint: string;
   };
 
-  /** Logos fixes en haut (équipe à gauche, bannière à droite). */
-  logos: {
-    team: { src: string; alt: string; width: number; height: number };
-    banner: { src: string; alt: string; width: number; height: number };
+  /** Signature texte fixe en haut à gauche (pas de logo image). */
+  wordmark: {
+    name: string;
+    tagline: string;
   };
 
-  /** Courtier(s). Ici : Véronique seule. Les noms servent aux textes du rapport (le badge flottant a été retiré). */
+  /** Courtier(s). Les noms servent aux textes du rapport. */
   brokers: BrokerConfig[];
 }
 
 export const BRAND: BrandConfig = {
-  slug: "vero-meilleur-prix",
+  slug: "meilleurprix-alexis",
 
-  teamName: "Véronique Guillemette",
+  teamName: "Alexis Marcoux",
 
-  region: "l'Outaouais",
-  city: "Gatineau",
+  region: "la Rive-Sud",
+  city: "Longueuil",
 
   map: {
-    // Gatineau (secteur Hull). Ajuste au besoin.
-    center: [45.4765, -75.7013],
-    zoom: 13,
+    // Longueuil / Rive-Sud de Montréal. Ajuste au besoin.
+    center: [45.5312, -73.5181],
+    zoom: 12,
   },
 
   hero: {
-    chip: "Estimation personnalisée",
-    title: "Votre propriété va‑t‑elle se vendre au meilleur prix du marché à Gatineau ?",
+    chip: "Analyse personnalisée",
+    title: "Votre propriété va‑t‑elle se vendre au meilleur prix du marché sur la Rive-Sud ?",
     titleHighlight: "meilleur prix",
-    titleSoft: "Gatineau",
+    titleSoft: "Rive-Sud",
     subtitle:
-      "Répondez à 10 questions et recevez une analyse honnête et confidentielle de ce qui peut faire monter, ou baisser, votre prix de vente : prix de départ, état de la propriété, attrait extérieur et mise en marché.",
+      "Répondez à 9 questions et recevez une analyse honnête et confidentielle de ce qui peut faire monter, ou baisser, votre prix de vente : prix de départ, état de la propriété et attrait extérieur.",
     signature: "Boosté par l'IA",
-    cta: "Commencer mon évaluation",
+    cta: "Commencer mon analyse",
     ctaHint: "3 minutes — gratuit et confidentiel",
     scrollHint: "Confidentiel · Sans engagement",
   },
 
-  logos: {
-    team: {
-      src: "/veronique-guillemette.webp",
-      alt: "Groupe Guillemette — Véronique Guillemette, courtière immobilière",
-      width: 800,
-      height: 228,
-    },
-    banner: {
-      // Logo de l'agence de Véronique (RE/MAX Vision), en haut à droite (pastille blanche).
-      src: "/remax-vision.jpg",
-      alt: "RE/MAX Vision — Agence immobilière",
-      width: 6197,
-      height: 3873,
-    },
+  wordmark: {
+    name: "Alexis Marcoux",
+    tagline: "Courtier immobilier · Rive-Sud",
   },
 
-  // Courtière unique — le badge flottant a été retiré (aucun numéro affiché).
   brokers: [
     {
-      name: "Véronique Guillemette",
-      title: "Courtière immobilière · RE/MAX",
-      photo: "/broker-1.svg",
+      name: "Alexis Marcoux",
+      title: "Courtier immobilier",
+      photo: "",
       objectPosition: "50% 18%",
       phoneDisplay: "",
       phoneTel: "",

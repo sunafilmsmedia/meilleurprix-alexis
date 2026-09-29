@@ -97,7 +97,6 @@ export async function POST(req: Request) {
     estimatedValue: answers.estimatedValue ?? 0,
     interiorCondition: answers.interiorCondition ?? "",
     curbAppeal: answers.curbAppeal ?? "",
-    marketingPlan: answers.marketingPlan ?? "",
     region: regionName,
     regionId: answers.region ?? "",
     // Signal critique : la personne est déjà sous contrat MAIS veut changer

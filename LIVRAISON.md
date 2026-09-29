@@ -1,10 +1,12 @@
-# Test « Votre propriété va-t-elle se vendre au meilleur prix ? » — Véronique Guillemette
+# Test « Votre propriété va-t-elle se vendre au meilleur prix ? » — Alexis Marcoux (Rive-Sud)
 
-Cloné de `eval-veroniqueguillemette`. Différences :
-- 10 questions : type, délai de vente, méthode de prix, les « trois gros » (toiture, chauffage, chauffe-eau),
-  valeur estimée, état intérieur, attrait extérieur, mise en marché, courtier existant, secteur.
-- Scoring = 5 facteurs de prix + délai (`lib/scoring.ts`). ≥ 75 favorable, 50-74 moyen, < 50 défavorable.
+Cloné du template d'évaluation vendeur. Différences :
+- 9 questions : type, délai de vente, méthode de prix, toiture/chauffage/chauffe-eau,
+  valeur estimée, état intérieur, « effet wow » extérieur, courtier existant, secteur.
+- Scoring = 4 facteurs de prix + délai (`lib/scoring.ts`). ≥ 75 favorable, 50-74 moyen, < 50 défavorable.
 - **Tous les verdicts sont envoyés au CRM** : un score bas = vendeur qui a besoin d'aide (lead chaud).
+- Pas de logo : signature texte en haut à gauche (`BRAND.wordmark` dans `lib/brand.ts`).
+- Thème bleu marine / blanc / bronze, police d'accent Lora.
 - Le reste de ce document décrit le template d'origine.
 
 ---

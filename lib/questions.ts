@@ -8,7 +8,6 @@ export type QuestionId =
   | "estimatedValue"
   | "interiorCondition"
   | "curbAppeal"
-  | "marketingPlan"
   | "hasContract"
   | "region";
 
@@ -78,8 +77,8 @@ export const QUESTIONS: QuestionDef[] = [
   {
     id: "bigThree",
     kind: "choice",
-    title: "Vos « trois gros » : connaissez-vous leur âge et leur état ?",
-    subtitle: "La toiture, le chauffage et la climatisation, et le chauffe-eau. C'est la première chose que l'inspecteur de l'acheteur va regarder.",
+    title: "La toiture, le chauffage et la climatisation, et le chauffe-eau : connaissez-vous leur âge et leur état ?",
+    subtitle: "C'est la première chose que l'inspecteur de l'acheteur va regarder.",
     autoAdvance: true,
     choices: [
       { value: "recents", label: "Oui, tout est récent ou bien documenté", hint: "Factures, dates d'installation" },
@@ -110,27 +109,14 @@ export const QUESTIONS: QuestionDef[] = [
   {
     id: "curbAppeal",
     kind: "choice",
-    title: "Et votre attrait extérieur ?",
-    subtitle: "Quand un acheteur se stationne devant, quel « effet wow » donnent votre aménagement paysager, votre porte d'entrée et votre façade ?",
+    title: "Est-ce qu'il y a un « effet wow » quand un acheteur arrive devant ?",
+    subtitle: "Aménagement paysager, porte d'entrée, façade : c'est la première impression.",
     autoAdvance: true,
     choices: [
       { value: "coup_de_coeur", label: "Coup de cœur assuré" },
       { value: "correct", label: "Correct, sans plus" },
       { value: "ameliorations", label: "Quelques améliorations à faire", hint: "Plates-bandes, peinture, éclairage" },
       { value: "manque_amour", label: "Ça manque d'amour" },
-    ],
-  },
-  {
-    id: "marketingPlan",
-    kind: "choice",
-    title: "Comment les acheteurs vont-ils découvrir votre propriété ?",
-    subtitle: "Plus d'acheteurs qui la voient, c'est plus de compétition sur le prix.",
-    autoAdvance: true,
-    choices: [
-      { value: "complet", label: "Centris, photos pro, vidéo et réseaux sociaux" },
-      { value: "centris_standard", label: "Centris avec des photos standards" },
-      { value: "pancarte", label: "Une pancarte et Marketplace" },
-      { value: "pas_pense", label: "Je n'y ai pas encore pensé" },
     ],
   },
   {
@@ -161,7 +147,6 @@ export function isAnswered(q: QuestionDef, a: Answers): boolean {
     case "estimatedValue": return typeof a.estimatedValue === "number" && a.estimatedValue > 0;
     case "interiorCondition": return !!a.interiorCondition;
     case "curbAppeal": return !!a.curbAppeal;
-    case "marketingPlan": return !!a.marketingPlan;
     case "hasContract":
       // "Non" = on peut continuer. "Oui" = bloqué SAUF si la personne
       // clique "Je veux changer" (wantsToSwitch = true).

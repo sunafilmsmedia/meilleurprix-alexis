@@ -262,7 +262,7 @@ export default function ResultsScreen({ analyze, answers, revealChoice, onRestar
                 bg-gradient-to-br from-[var(--color-gold-soft)] to-[var(--color-gold)]
                 flex items-center justify-center
                 font-serif text-[#0b1f3f] text-sm font-semibold
-                shadow-[0_6px_18px_-4px_rgba(201,162,39,0.45)]
+                shadow-[0_6px_18px_-4px_rgba(200,131,74,0.45)]
               ">
                 {i + 1}
               </span>
@@ -357,7 +357,7 @@ function ScoreCard({ score, verdict }: { score: number; verdict: Verdict }) {
         rounded-3xl p-7 sm:p-9
         bg-gradient-to-br from-[#16366b] via-[#0e2548] to-[#07152b]
         border border-[var(--color-gold)]/25
-        shadow-[0_30px_80px_-30px_rgba(3,10,24,0.9),0_0_0_1px_rgba(201,162,39,0.12)_inset]
+        shadow-[0_30px_80px_-30px_rgba(3,10,24,0.9),0_0_0_1px_rgba(200,131,74,0.12)_inset]
       "
     >
       <div className="absolute -top-20 -right-20 w-60 h-60 rounded-full bg-[var(--color-gold)]/15 blur-3xl" />

@@ -11,8 +11,6 @@ export type InteriorCondition = "prete" | "retouches" | "travaux" | "ne_sait_pas
 
 export type CurbAppeal = "coup_de_coeur" | "correct" | "ameliorations" | "manque_amour";
 
-export type MarketingPlan = "complet" | "centris_standard" | "pancarte" | "pas_pense";
-
 export type Region = {
   id: string;
   name: string;
@@ -28,7 +26,6 @@ export interface Answers {
   estimatedValue?: number;
   interiorCondition?: InteriorCondition;
   curbAppeal?: CurbAppeal;
-  marketingPlan?: MarketingPlan;
   // hasContract = true bloque le formulaire (la personne est déjà
   // sous contrat avec un autre courtier — légalement on ne peut pas
   // l'évaluer). wantsToSwitch = true permet de débloquer (l'utilisateur

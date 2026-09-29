@@ -31,14 +31,13 @@ const STEP_NAMES: Record<string, string> = {
   estimatedValue: "valeur_estimee",
   interiorCondition: "etat_interieur",
   curbAppeal: "attrait_exterieur",
-  marketingPlan: "mise_en_marche",
   hasContract: "courtier_existant",
   region: "secteur",
 };
 // Champs dont la valeur est un choix prédéfini → sûr à transmettre comme "value".
 const CHOICE_FIELDS = new Set([
   "propertyType", "sellTimeline", "pricingMethod", "bigThree",
-  "interiorCondition", "curbAppeal", "marketingPlan", "hasContract",
+  "interiorCondition", "curbAppeal", "hasContract",
 ]);
 
 // Émet l'événement d'étape à partir de la réponse fournie (jamais de PII).
@@ -222,8 +221,8 @@ export default function QualificationForm({ onComplete, onNoSell, onExit }: Prop
                 px-6 sm:px-8 py-3 rounded-full text-sm font-medium
                 bg-gradient-to-b from-[var(--color-gold-soft)] to-[var(--color-gold)]
                 text-[#0b1f3f] font-semibold
-                shadow-[0_15px_40px_-10px_rgba(201,162,39,0.5)]
-                hover:shadow-[0_20px_50px_-10px_rgba(201,162,39,0.65)]
+                shadow-[0_15px_40px_-10px_rgba(200,131,74,0.5)]
+                hover:shadow-[0_20px_50px_-10px_rgba(200,131,74,0.65)]
                 disabled:opacity-50 disabled:cursor-not-allowed
                 transition-all
               "
@@ -331,14 +330,6 @@ function QuestionRenderer({
           choices={choices!}
           value={answers.curbAppeal}
           onChange={(v) => onUpdate({ curbAppeal: v as Answers["curbAppeal"] }, autoAdvance)}
-        />
-      );
-    case "marketingPlan":
-      return (
-        <ChoiceQuestion
-          choices={choices!}
-          value={answers.marketingPlan}
-          onChange={(v) => onUpdate({ marketingPlan: v as Answers["marketingPlan"] }, autoAdvance)}
         />
       );
     case "hasContract":

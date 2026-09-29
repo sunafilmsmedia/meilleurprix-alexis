@@ -28,7 +28,7 @@ export default function ChoiceQuestion({ choices, value, onChange }: Props) {
               transition-all duration-200
               ${
                 selected
-                  ? "bg-gradient-to-br from-[var(--color-gold-soft)] to-[var(--color-gold)] border border-[var(--color-gold-soft)] shadow-[0_12px_30px_-10px_rgba(201,162,39,0.5)]"
+                  ? "bg-gradient-to-br from-[var(--color-gold-soft)] to-[var(--color-gold)] border border-[var(--color-gold-soft)] shadow-[0_12px_30px_-10px_rgba(200,131,74,0.5)]"
                   : "glass-card hover:border-[var(--color-slate-accent)]/30 hover:bg-white/[0.08]"
               }
             `}

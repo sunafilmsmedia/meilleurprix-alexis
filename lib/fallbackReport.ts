@@ -22,15 +22,15 @@ export function buildFallbackReport(answers: Answers, scoring: ScoringResult): R
   const weakest = [...factors].sort((a, b) => a.delta - b.delta)[0];
 
   const summaryByVerdict = {
-    favorable: `Votre prix de départ, l'état de votre propriété et votre plan de mise en marché jouent en votre faveur. Il reste à valider le prix avec les ventes récentes de votre secteur pour ne rien laisser sur la table.`,
+    favorable: `Votre prix de départ, l'état de votre propriété et sa première impression jouent en votre faveur. Il reste à valider le prix avec les ventes récentes de votre secteur pour ne rien laisser sur la table.`,
     moyen: `Plusieurs éléments sont en place, mais quelques points peuvent servir d'argument à l'acheteur pour baisser son offre. Réglés avant la mise en marché, ils protègent votre prix.`,
-    defavorable: `Plusieurs facteurs risquent de faire baisser les offres : prix de départ, état de la propriété ou visibilité. La bonne nouvelle, c'est qu'ils se corrigent presque tous avant la mise en vente.`,
+    defavorable: `Plusieurs facteurs risquent de faire baisser les offres : prix de départ, état de la propriété ou première impression. La bonne nouvelle, c'est qu'ils se corrigent presque tous avant la mise en vente.`,
   };
 
   const marketInsightByVerdict = {
-    favorable: `À ${BRAND.city}, les propriétés bien préparées et bien affichées dès la première semaine attirent le plus de visites, et c'est la compétition entre acheteurs qui fait monter le prix.`,
-    moyen: `En ${BRAND.region}, les acheteurs comparent tout en ligne avant de visiter. Les premières photos et le prix affiché décident si votre propriété fait partie de leur liste.`,
-    defavorable: `Une propriété qui reste longtemps sur le marché envoie un signal aux acheteurs de ${BRAND.city} : ils présument qu'il y a un problème et offrent moins.`,
+    favorable: `Sur ${BRAND.region}, les propriétés bien préparées et bien affichées dès la première semaine attirent le plus de visites, et c'est la compétition entre acheteurs qui fait monter le prix.`,
+    moyen: `Sur ${BRAND.region}, les acheteurs comparent tout en ligne avant de visiter. Les premières photos et le prix affiché décident si votre propriété fait partie de leur liste.`,
+    defavorable: `Une propriété qui reste longtemps sur le marché envoie un signal aux acheteurs : ils présument qu'il y a un problème et offrent moins.`,
   };
 
   const stats = [

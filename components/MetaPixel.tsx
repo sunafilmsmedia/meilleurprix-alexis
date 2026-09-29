@@ -2,7 +2,7 @@
 
 import Script from "next/script";
 
-// Pixel Meta — pixel de Véronique Guillemette par défaut, surchargeable par
+// Pixel Meta — aucun pixel par défaut, renseigné par
 // déploiement via NEXT_PUBLIC_META_PIXEL_ID. Vide = aucun script Meta injecté.
 const PIXEL_ID = process.env.NEXT_PUBLIC_META_PIXEL_ID ?? "";
 

@@ -57,8 +57,8 @@ export default function ExistingBrokerBlocker({ onWantsToSwitch, onCancel }: Pro
             px-6 py-3.5 rounded-full text-sm font-medium
             bg-gradient-to-b from-[var(--color-gold-soft)] to-[var(--color-gold)]
             text-[#0b1f3f] font-semibold
-            shadow-[0_15px_40px_-10px_rgba(201,162,39,0.5)]
-            hover:shadow-[0_20px_50px_-10px_rgba(201,162,39,0.65)]
+            shadow-[0_15px_40px_-10px_rgba(200,131,74,0.5)]
+            hover:shadow-[0_20px_50px_-10px_rgba(200,131,74,0.65)]
             transition-all
           "
         >

@@ -1,6 +1,6 @@
 import type { Answers, ScoringFactor, ScoringResult, Verdict } from "./types";
 
-const BASE_SCORE = 40;
+const BASE_SCORE = 44;
 
 function clamp(n: number, min: number, max: number) {
   return Math.max(min, Math.min(max, n));
@@ -60,13 +60,6 @@ const CURB_APPEAL: Record<string, Rule> = {
   manque_amour: { delta: -8, label: "Première impression faible — des acheteurs passeront tout droit" },
 };
 
-const MARKETING: Record<string, Rule> = {
-  complet: { delta: 12, label: "Mise en marché complète — plus d'acheteurs, plus de compétition" },
-  centris_standard: { delta: 3, label: "Visible sur Centris, sans se démarquer" },
-  pancarte: { delta: -8, label: "Visibilité limitée — moins d'acheteurs, moins de compétition sur le prix" },
-  pas_pense: { delta: -4, label: "Plan de mise en marché à bâtir" },
-};
-
 const TIMELINE: Record<string, Rule> = {
   moins_3_mois: { delta: 0, label: "Vente à court terme — la préparation doit commencer maintenant" },
   "3_6_mois": { delta: 4, label: "3 à 6 mois — assez de temps pour bien préparer la propriété" },
@@ -82,7 +75,6 @@ export function computeScoring(answers: Answers): ScoringResult {
   score += apply(factors, answers.bigThree && BIG_THREE[answers.bigThree]);
   score += apply(factors, answers.interiorCondition && INTERIOR[answers.interiorCondition]);
   score += apply(factors, answers.curbAppeal && CURB_APPEAL[answers.curbAppeal]);
-  score += apply(factors, answers.marketingPlan && MARKETING[answers.marketingPlan]);
   score += apply(factors, answers.sellTimeline && TIMELINE[answers.sellTimeline]);
 
   const finalScore = Math.round(clamp(score, 0, 100));
