@@ -2,9 +2,8 @@
 
 import Script from "next/script";
 
-// Microsoft Clarity — renseigné par déploiement via NEXT_PUBLIC_CLARITY_ID.
-// Vide = aucun script Clarity injecté.
-const CLARITY_PROJECT_ID = process.env.NEXT_PUBLIC_CLARITY_ID ?? "";
+// Microsoft Clarity d'Alexis Marcoux — NEXT_PUBLIC_CLARITY_ID le remplace si renseigné.
+const CLARITY_PROJECT_ID = process.env.NEXT_PUBLIC_CLARITY_ID || "z7gtxbge58";
 
 export default function Clarity() {
   if (!CLARITY_PROJECT_ID) return null;
