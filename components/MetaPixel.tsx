@@ -2,9 +2,8 @@
 
 import Script from "next/script";
 
-// Pixel Meta — aucun pixel par défaut, renseigné par
-// déploiement via NEXT_PUBLIC_META_PIXEL_ID. Vide = aucun script Meta injecté.
-const PIXEL_ID = process.env.NEXT_PUBLIC_META_PIXEL_ID ?? "";
+// Pixel Meta d'Alexis Marcoux — NEXT_PUBLIC_META_PIXEL_ID le remplace si renseigné.
+const PIXEL_ID = process.env.NEXT_PUBLIC_META_PIXEL_ID || "1459309069723152";
 
 declare global {
   interface Window {
