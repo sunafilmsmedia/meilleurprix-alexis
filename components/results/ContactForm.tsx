@@ -151,12 +151,12 @@ export default function ContactForm({ answers, verdict, onSubmitted, gated }: Pr
           placeholder="marie@exemple.ca"
         />
         <Field
-          label="Votre prénom"
+          label="Nom complet"
           required
-          autoComplete="given-name"
+          autoComplete="name"
           value={name}
           onChange={setName}
-          placeholder="Marie"
+          placeholder="Marie Tremblay"
         />
         <Field
           label="Téléphone"
