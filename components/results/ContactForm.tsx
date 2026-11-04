@@ -191,7 +191,7 @@ export default function ContactForm({ answers, verdict, onSubmitted, gated }: Pr
         </span>
         <span className="text-xs sm:text-sm text-slate-400 leading-relaxed">
           J&apos;accepte que {BRAND.teamName} m&apos;envoie mon analyse gratuite
-          et puisse me contacter au sujet de la vente de ma propriété.
+          et puisse me contacter au sujet de mon évaluation.
         </span>
       </label>
 
